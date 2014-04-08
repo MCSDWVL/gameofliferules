@@ -1,0 +1,85 @@
+<html>
+    <head/>
+    <body>
+        <script src="gamePiece.js"></script>
+        <script src="gameBoard.js"></script>
+        <script src="lifeManager.js"></script>
+        <script src="main.js"></script>
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myDrawing" width="1000" height="750">
+                        <p>Oops!  HTML5 Canvas not supported!</p>
+                    </canvas>
+                </td>
+                <td>
+                    <form NAME="rules">
+                        <table BORDER="0" CellSpacing="0" CellPadding="6">
+                            <tr>
+                                <td>#</td>
+                                <td>B</td>
+                                <td>S</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td><input type="checkbox" name="rulesB" value="b0" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s0" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="checkbox" name="rulesB" value="b1" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s1" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input type="checkbox" name="rulesB" value="b2" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s2" onclick="QueueFullUpdate()" checked/></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><input type="checkbox" name="rulesB" value="b3" onclick="QueueFullUpdate()" checked/></td>
+                                <td><input type="checkbox" name="rulesS" value="s3" onclick="QueueFullUpdate()" checked/></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><input type="checkbox" name="rulesB" value="b4" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s4" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><input type="checkbox" name="rulesB" value="b5" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s5" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><input type="checkbox" name="rulesB" value="b6" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s6" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><input type="checkbox" name="rulesB" value="b7" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s7" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><input type="checkbox" name="rulesB" value="b8" onclick="QueueFullUpdate()" /></td>
+                                <td><input type="checkbox" name="rulesS" value="s8" onclick="QueueFullUpdate()" /></td>
+                            </tr>
+                            <tr><td><input type="button" name"randomize" value="randomize" onclick="RandomizeGameboard()" /></td></tr>
+                            <tr><td><input type="button" id="togglepause" name="togglepause" value="run" onclick="TogglePause()" /></td></tr>
+                            <tr><td><input type="button" id="clear" name="clear" value="clear" onclick="Clear()" /></td></tr>
+                            <tr><td>Randomize Rules</td><td><input type="checkbox" name="rulesrandomize" value="rr" /></td></tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div ID="editoroutput"></div>
+    </body>
+</html>
+
+
+
+<script language=javascript>
+    Init();  
+</script>
